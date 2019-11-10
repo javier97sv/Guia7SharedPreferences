@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String KEY_SCORE = "SCORE";
     public static final String KEY_INTENTOS = "INTENTOS";
     public static final String KEY_RANDOM = "RAMDOM";
+    public static final String KEY_NEW = "IFNEW";
     public static final String NAME_FILE = "Configuracion";
     public static SharedPreferences configuracion;
 
@@ -49,14 +50,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void CrearJugador(){
-        if(this.configuracion == null){
-            this.configuracion = getSharedPreferences(NAME_FILE, MODE_PRIVATE);
+        this.configuracion = getSharedPreferences(NAME_FILE, MODE_PRIVATE);
+        if(this.configuracion.getBoolean(KEY_NEW, true)){
             int random = (int) ((Math.random() * 10) + 1);
             SharedPreferences.Editor editorConfiguracion = this.configuracion.edit();
             editorConfiguracion.putString(KEY_NICK, "Player 1");
             editorConfiguracion.putInt(KEY_SCORE, 0);
             editorConfiguracion.putInt(KEY_INTENTOS, 0);
             editorConfiguracion.putInt(KEY_RANDOM, random);
+            editorConfiguracion.putBoolean(KEY_NEW, false);
             editorConfiguracion.commit();
         }
     }
