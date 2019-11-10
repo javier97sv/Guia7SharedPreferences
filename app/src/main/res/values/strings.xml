@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Guia 7 - Lab. DM</string>
+
+    <!-- Main Activity -->
+    <string name="btnJugar">Jugar</string>
+    <string name="btnPuntaje">Ver puntaje</string>
+    <string name="btnNumRandom">Ver respuesta correcta</string>
+    <string name="btnDatos">Mis datos</string>
+
+    <!-- Menu -->
+    <string name="lblConfiguracion">Configuración</string>
+    <string name="lblGuardarConfiguracion">Guardar configuración</string>
+
+    <!-- Datos -->
+    <string name="nombre">Carlos Javier Cañénguez Martínez</string>
+    <string name="codigo">CM16-I04-001</string>
+    <string name="tituloDatos">Mis datos</string>
+
+    <!-- Configuración -->
+    <string name="titleConfig">Guia 7 - Configuración</string>
+    <string name="lblIndicacionConfig">Digite el nick del jugador</string>
+    <string name="lblNick">Nick gamer</string>
+
+    <!-- Adivina -->
+    <string name="titleAdivina">Guia 7 - Adivina</string>
+    <string name="lblScore">Puntaje total:</string>
+    <string name="btnAdivinar">Adivinar</string>
+    <string name="lblNIntentos">Intentos realizados:</string>
+    <string name="lblCero">100</string>
+    <string name="lblNAdivinar">Número</string>
+    <string name="lblIncognita">¿Cuál es el número elegido? (1 al 10)</string>
+    <string name="lblPista">Pista</string>
+    <string name="lblMenor">El número debe ser menor</string>
+    <string name="lblMayor">El número debe ser mayor</string>
+
+    <!-- Puntaje -->
+    <string name="titlePuntaje">Guia 7 - Puntaje</string>
+    <string name="lblPuntaje">Puntaje total</string>
+
+    <!-- Respuesta -->
+    <string name="titleRespuesta">Guia 7 - Respuesta correcta</string>
+    <string name="lblRespuesta">Respuesta correcta</string>
+</resources>
